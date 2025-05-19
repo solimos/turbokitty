@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  --hue: 12;
+  --star: #f7c655;
+  --bg: #262626;
+  --strap: #212121;
+  --red: #ed685e;
+  --orange: #ed975e;
+  --lime: #e4ed5e;
+  --green: #84ed5e;
+  --turquoise: #5ee4ed;
+  --purple: #685eed;
+  --indigo: #975eed;
+  --violet: #ed5eb4;
+  --tail: hsl(var(--hue), 27%, 62%);
+  --stroke: #1a1a1a;
+  --muzzle: hsl(var(--hue), 43%, 89%);
+  --dark: hsl(var(--hue), 33%, 67%);
+  --light: hsl(var(--hue), 65%, 79%);
+  --strap: #333;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+svg {
+  height: 100vmin;
+  display: none;
+}
+.stars path {
+  fill: var(--star);
+}
+.kitty__light {
+  fill: var(--light);
+}
+.kitty__dark {
+  fill: var(--dark);
+}
+.kitty__dark-stroke {
+  stroke: var(--dark);
+}
+.kitty__stroke {
+  stroke: var(--stroke);
+}
+.kitty__fill {
+  fill: var(--stroke);
+}
+.kitty__muzzle {
+  fill: var(--muzzle);
+}
+.kitty__tail {
+  stroke: var(--tail);
+}
+.rocket__strap {
+  fill: var(--strap);
+}
+.rocket__body path:nth-of-type(1) {
+  fill: #a6a6a6;
+}
+.rocket__body path:nth-of-type(2) {
+  fill: #333;
+}
+.rocket__body path:nth-of-type(3) {
+  fill: #d9d9d9;
+}
+.rocket__body path:nth-of-type(4) {
+  fill: #4d4d4d;
+}
+.rocket__stream path:nth-of-type(1),
+.rocket__bubbles path:nth-of-type(1),
+.rocket__stream path:nth-of-type(8),
+.rocket__bubbles path:nth-of-type(8) {
+  fill: var(--red);
+}
+.rocket__stream path:nth-of-type(2),
+.rocket__bubbles path:nth-of-type(2),
+.rocket__stream path:nth-of-type(9),
+.rocket__bubbles path:nth-of-type(9) {
+  fill: var(--orange);
+}
+.rocket__stream path:nth-of-type(3),
+.rocket__bubbles path:nth-of-type(3),
+.rocket__stream path:nth-of-type(10),
+.rocket__bubbles path:nth-of-type(10) {
+  fill: var(--lime);
+}
+.rocket__stream path:nth-of-type(4),
+.rocket__bubbles path:nth-of-type(4),
+.rocket__stream path:nth-of-type(11),
+.rocket__bubbles path:nth-of-type(11) {
+  fill: var(--green);
+}
+.rocket__stream path:nth-of-type(5),
+.rocket__bubbles path:nth-of-type(5),
+.rocket__stream path:nth-of-type(12),
+.rocket__bubbles path:nth-of-type(12) {
+  fill: var(--turquoise);
+}
+.rocket__stream path:nth-of-type(6),
+.rocket__bubbles path:nth-of-type(6),
+.rocket__stream path:nth-of-type(13),
+.rocket__bubbles path:nth-of-type(13) {
+  fill: var(--purple);
+}
+.rocket__stream path:nth-of-type(7),
+.rocket__bubbles path:nth-of-type(7),
+.rocket__stream path:nth-of-type(14),
+.rocket__bubbles path:nth-of-type(14) {
+  fill: var(--indigo);
+}
+.rocket__stream path:nth-of-type(8),
+.rocket__bubbles path:nth-of-type(8),
+.rocket__stream path:nth-of-type(15),
+.rocket__bubbles path:nth-of-type(15) {
+  fill: var(--violet);
+}
